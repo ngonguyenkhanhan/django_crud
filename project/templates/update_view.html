@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="main">
+        <!-- Create a form -->
+        <form action="" method="post">
+           {% csrf_token %}
+
+           <!-- form as paragraph -->
+            {{ form.as_p }}
+            <input type="submit" value="Update">
+        </form>
+    </div>
+{% endblock body %}
